@@ -10,7 +10,10 @@ export class Fight extends Contract {
     depositedAmount = GlobalStateKey<uint64>();
     maxDepositAmount = GlobalStateKey<uint64>();
     winner = GlobalStateKey<Address>();
+    player1Move = BoxKey<string>({key:'player1Move',dynamicSize: true});
+    player2Move = BoxKey<string>({key:'player2Move',dynamicSize: true});
 
+    status = GlobalStateKey<string>(); // Possible values: 'Active', 'Expired'
 
     createApplication(player1: Address, player2: Address): void {
 
@@ -22,7 +25,11 @@ export class Fight extends Contract {
 
 
       }
+      createBox(): void {
+        this.player1Move.create(400)
+        this.player2Move.create(400)
 
+      }
 
       depositfunds(ftransx : Txn){
         assert(
@@ -54,6 +61,16 @@ export class Fight extends Contract {
           this.depositedAmount.value = 0;
 
 
+
+      }
+
+
+      joinGame (player: Address){
+        assert(
+            !this.player2.exists
+          );
+
+          this.player2.value =player;
 
       }
 

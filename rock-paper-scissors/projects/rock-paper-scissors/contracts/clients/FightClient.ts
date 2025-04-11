@@ -24,7 +24,7 @@ import { SendParams, SendSingleTransactionResult, SendAtomicTransactionComposerR
 import { Address, encodeAddress, modelsv2, OnApplicationComplete, Transaction, TransactionSigner } from 'algosdk'
 import SimulateResponse = modelsv2.SimulateResponse
 
-export const APP_SPEC: Arc56Contract = {"name":"Fight","desc":"","methods":[{"name":"createApplication","args":[{"name":"player1","type":"address"},{"name":"player2","type":"address"}],"returns":{"type":"void"},"actions":{"create":["NoOp"],"call":[]}},{"name":"depositfunds","args":[{"name":"ftransx","type":"txn"}],"returns":{"type":"void"},"actions":{"create":[],"call":["NoOp"]}},{"name":"sendFunds","args":[{"name":"player","type":"address"}],"returns":{"type":"void"},"actions":{"create":[],"call":["NoOp"]}}],"arcs":[4,56],"structs":{},"state":{"schema":{"global":{"bytes":3,"ints":2},"local":{"bytes":0,"ints":0}},"keys":{"global":{"player1":{"key":"cGxheWVyMQ==","keyType":"AVMBytes","valueType":"address"},"player2":{"key":"cGxheWVyMg==","keyType":"AVMBytes","valueType":"address"},"depositedAmount":{"key":"ZGVwb3NpdGVkQW1vdW50","keyType":"AVMBytes","valueType":"uint64"},"maxDepositAmount":{"key":"bWF4RGVwb3NpdEFtb3VudA==","keyType":"AVMBytes","valueType":"uint64"},"winner":{"key":"d2lubmVy","keyType":"AVMBytes","valueType":"address"}},"local":{},"box":{}},"maps":{"global":{},"local":{},"box":{}}},"bareActions":{"create":[],"call":[]},"sourceInfo":{"approval":{"sourceInfo":[{"teal":1,"source":"contracts/GameContract.algo.ts:4","pc":[0]},{"teal":2,"source":"contracts/GameContract.algo.ts:4","pc":[1,2,3,4,5]},{"teal":3,"source":"contracts/GameContract.algo.ts:4","pc":[6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39]},{"teal":15,"source":"contracts/GameContract.algo.ts:4","pc":[40,41]},{"teal":16,"source":"contracts/GameContract.algo.ts:4","pc":[42]},{"teal":17,"source":"contracts/GameContract.algo.ts:4","pc":[43,44]},{"teal":18,"source":"contracts/GameContract.algo.ts:4","pc":[45]},{"teal":19,"source":"contracts/GameContract.algo.ts:4","pc":[46,47]},{"teal":20,"source":"contracts/GameContract.algo.ts:4","pc":[48]},{"teal":21,"source":"contracts/GameContract.algo.ts:4","pc":[49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74]},{"teal":25,"source":"contracts/GameContract.algo.ts:4","errorMessage":"The requested action is not implemented in this contract. Are you using the correct OnComplete? Did you set your app ID?","pc":[75]},{"teal":30,"source":"contracts/GameContract.algo.ts:15","pc":[76,77,78]},{"teal":31,"source":"contracts/GameContract.algo.ts:15","pc":[79]},{"teal":32,"source":"contracts/GameContract.algo.ts:15","pc":[80]},{"teal":33,"source":"contracts/GameContract.algo.ts:15","pc":[81]},{"teal":34,"source":"contracts/GameContract.algo.ts:15","pc":[82]},{"teal":37,"source":"contracts/GameContract.algo.ts:15","errorMessage":"argument 0 (player2) for createApplication must be a address","pc":[83]},{"teal":40,"source":"contracts/GameContract.algo.ts:15","pc":[84,85,86]},{"teal":41,"source":"contracts/GameContract.algo.ts:15","pc":[87]},{"teal":42,"source":"contracts/GameContract.algo.ts:15","pc":[88]},{"teal":43,"source":"contracts/GameContract.algo.ts:15","pc":[89]},{"teal":44,"source":"contracts/GameContract.algo.ts:15","pc":[90]},{"teal":47,"source":"contracts/GameContract.algo.ts:15","errorMessage":"argument 1 (player1) for createApplication must be a address","pc":[91]},{"teal":50,"source":"contracts/GameContract.algo.ts:15","pc":[92,93,94]},{"teal":51,"source":"contracts/GameContract.algo.ts:15","pc":[95]},{"teal":52,"source":"contracts/GameContract.algo.ts:15","pc":[96]},{"teal":56,"source":"contracts/GameContract.algo.ts:15","pc":[97,98,99]},{"teal":60,"source":"contracts/GameContract.algo.ts:18","pc":[100]},{"teal":61,"source":"contracts/GameContract.algo.ts:18","pc":[101,102]},{"teal":62,"source":"contracts/GameContract.algo.ts:18","pc":[103]},{"teal":66,"source":"contracts/GameContract.algo.ts:19","pc":[104]},{"teal":67,"source":"contracts/GameContract.algo.ts:19","pc":[105,106]},{"teal":68,"source":"contracts/GameContract.algo.ts:19","pc":[107]},{"teal":72,"source":"contracts/GameContract.algo.ts:20","pc":[108]},{"teal":73,"source":"contracts/GameContract.algo.ts:20","pc":[109]},{"teal":74,"source":"contracts/GameContract.algo.ts:20","pc":[110]},{"teal":78,"source":"contracts/GameContract.algo.ts:21","pc":[111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128]},{"teal":79,"source":"contracts/GameContract.algo.ts:21","pc":[129,130]},{"teal":80,"source":"contracts/GameContract.algo.ts:21","pc":[131]},{"teal":81,"source":"contracts/GameContract.algo.ts:15","pc":[132]},{"teal":86,"source":"contracts/GameContract.algo.ts:27","pc":[133,134]},{"teal":87,"source":"contracts/GameContract.algo.ts:27","pc":[135]},{"teal":88,"source":"contracts/GameContract.algo.ts:27","pc":[136]},{"teal":91,"source":"contracts/GameContract.algo.ts:27","pc":[137,138,139]},{"teal":92,"source":"contracts/GameContract.algo.ts:27","pc":[140]},{"teal":93,"source":"contracts/GameContract.algo.ts:27","pc":[141]},{"teal":97,"source":"contracts/GameContract.algo.ts:27","pc":[142,143,144]},{"teal":105,"source":"contracts/GameContract.algo.ts:29","pc":[145,146]},{"teal":106,"source":"contracts/GameContract.algo.ts:29","pc":[147,148,149]},{"teal":107,"source":"contracts/GameContract.algo.ts:29","pc":[150,151]},{"teal":108,"source":"contracts/GameContract.algo.ts:29","pc":[152]},{"teal":109,"source":"contracts/GameContract.algo.ts:29","pc":[153]},{"teal":110,"source":"contracts/GameContract.algo.ts:29","pc":[154]},{"teal":111,"source":"contracts/GameContract.algo.ts:29","pc":[155,156,157]},{"teal":112,"source":"contracts/GameContract.algo.ts:30","pc":[158,159]},{"teal":113,"source":"contracts/GameContract.algo.ts:30","pc":[160]},{"teal":114,"source":"contracts/GameContract.algo.ts:30","pc":[161]},{"teal":115,"source":"contracts/GameContract.algo.ts:30","pc":[162]},{"teal":116,"source":"contracts/GameContract.algo.ts:29","pc":[163]},{"teal":119,"source":"contracts/GameContract.algo.ts:30","pc":[164]},{"teal":120,"source":"contracts/GameContract.algo.ts:30","pc":[165,166,167]},{"teal":121,"source":"contracts/GameContract.algo.ts:31","pc":[168,169]},{"teal":122,"source":"contracts/GameContract.algo.ts:31","pc":[170]},{"teal":123,"source":"contracts/GameContract.algo.ts:31","pc":[171]},{"teal":124,"source":"contracts/GameContract.algo.ts:31","pc":[172]},{"teal":125,"source":"contracts/GameContract.algo.ts:30","pc":[173]},{"teal":128,"source":"contracts/GameContract.algo.ts:28","pc":[174]},{"teal":137,"source":"contracts/GameContract.algo.ts:34","pc":[175,176]},{"teal":138,"source":"contracts/GameContract.algo.ts:34","pc":[177,178]},{"teal":139,"source":"contracts/GameContract.algo.ts:34","pc":[179]},{"teal":140,"source":"contracts/GameContract.algo.ts:34","pc":[180]},{"teal":143,"source":"contracts/GameContract.algo.ts:34","errorMessage":"transaction verification failed: {\"txn\":\"ftransx\",\"field\":\"typeEnum\",\"expected\":\"pay\"}","pc":[181]},{"teal":146,"source":"contracts/GameContract.algo.ts:34","pc":[182,183]},{"teal":147,"source":"contracts/GameContract.algo.ts:35","pc":[184,185]},{"teal":148,"source":"contracts/GameContract.algo.ts:35","pc":[186,187]},{"teal":149,"source":"contracts/GameContract.algo.ts:35","pc":[188]},{"teal":152,"source":"contracts/GameContract.algo.ts:35","errorMessage":"transaction verification failed: {\"txn\":\"ftransx\",\"field\":\"receiver\",\"expected\":\"this.app.address\"}","pc":[189]},{"teal":156,"source":"contracts/GameContract.algo.ts:39","pc":[190]},{"teal":157,"source":"contracts/GameContract.algo.ts:39","pc":[191]},{"teal":158,"source":"contracts/GameContract.algo.ts:39","pc":[192,193]},{"teal":159,"source":"contracts/GameContract.algo.ts:39","pc":[194,195]},{"teal":160,"source":"contracts/GameContract.algo.ts:39","pc":[196]},{"teal":161,"source":"contracts/GameContract.algo.ts:39","pc":[197]},{"teal":162,"source":"contracts/GameContract.algo.ts:39","pc":[198]},{"teal":163,"source":"contracts/GameContract.algo.ts:39","pc":[199]},{"teal":164,"source":"contracts/GameContract.algo.ts:27","pc":[200]},{"teal":169,"source":"contracts/GameContract.algo.ts:45","pc":[201,202,203]},{"teal":170,"source":"contracts/GameContract.algo.ts:45","pc":[204]},{"teal":171,"source":"contracts/GameContract.algo.ts:45","pc":[205]},{"teal":172,"source":"contracts/GameContract.algo.ts:45","pc":[206]},{"teal":173,"source":"contracts/GameContract.algo.ts:45","pc":[207]},{"teal":176,"source":"contracts/GameContract.algo.ts:45","errorMessage":"argument 0 (player) for sendFunds must be a address","pc":[208]},{"teal":179,"source":"contracts/GameContract.algo.ts:45","pc":[209,210,211]},{"teal":180,"source":"contracts/GameContract.algo.ts:45","pc":[212]},{"teal":181,"source":"contracts/GameContract.algo.ts:45","pc":[213]},{"teal":185,"source":"contracts/GameContract.algo.ts:45","pc":[214,215,216]},{"teal":191,"source":"contracts/GameContract.algo.ts:48","pc":[217,218]},{"teal":192,"source":"contracts/GameContract.algo.ts:48","pc":[219,220,221]},{"teal":193,"source":"contracts/GameContract.algo.ts:48","pc":[222,223]},{"teal":194,"source":"contracts/GameContract.algo.ts:48","pc":[224]},{"teal":195,"source":"contracts/GameContract.algo.ts:48","pc":[225]},{"teal":196,"source":"contracts/GameContract.algo.ts:47","pc":[226]},{"teal":203,"source":"contracts/GameContract.algo.ts:50","pc":[227]},{"teal":204,"source":"contracts/GameContract.algo.ts:50","pc":[228]},{"teal":205,"source":"contracts/GameContract.algo.ts:50","pc":[229,230]},{"teal":209,"source":"contracts/GameContract.algo.ts:51","pc":[231,232]},{"teal":210,"source":"contracts/GameContract.algo.ts:51","pc":[233,234]},{"teal":214,"source":"contracts/GameContract.algo.ts:52","pc":[235]},{"teal":215,"source":"contracts/GameContract.algo.ts:52","pc":[236]},{"teal":216,"source":"contracts/GameContract.algo.ts:52","pc":[237,238]},{"teal":219,"source":"contracts/GameContract.algo.ts:50","pc":[239]},{"teal":220,"source":"contracts/GameContract.algo.ts:50","pc":[240,241]},{"teal":223,"source":"contracts/GameContract.algo.ts:50","pc":[242]},{"teal":227,"source":"contracts/GameContract.algo.ts:54","pc":[243]},{"teal":228,"source":"contracts/GameContract.algo.ts:54","pc":[244]},{"teal":229,"source":"contracts/GameContract.algo.ts:54","pc":[245]},{"teal":230,"source":"contracts/GameContract.algo.ts:45","pc":[246]},{"teal":233,"source":"contracts/GameContract.algo.ts:4","pc":[247,248,249,250,251,252]},{"teal":234,"source":"contracts/GameContract.algo.ts:4","pc":[253,254,255]},{"teal":235,"source":"contracts/GameContract.algo.ts:4","pc":[256,257,258,259]},{"teal":238,"source":"contracts/GameContract.algo.ts:4","errorMessage":"this contract does not implement the given ABI method for create NoOp","pc":[260]},{"teal":241,"source":"contracts/GameContract.algo.ts:4","pc":[261,262,263,264,265,266]},{"teal":242,"source":"contracts/GameContract.algo.ts:4","pc":[267,268,269,270,271,272]},{"teal":243,"source":"contracts/GameContract.algo.ts:4","pc":[273,274,275]},{"teal":244,"source":"contracts/GameContract.algo.ts:4","pc":[276,277,278,279,280,281]},{"teal":247,"source":"contracts/GameContract.algo.ts:4","errorMessage":"this contract does not implement the given ABI method for call NoOp","pc":[282]}],"pcOffsetMethod":"none"},"clear":{"sourceInfo":[],"pcOffsetMethod":"none"}},"source":{"approval":"I3ByYWdtYSB2ZXJzaW9uIDEwCmludGNibG9jayAxIDAgMzIKYnl0ZWNibG9jayAweDY0NjU3MDZmNzM2OTc0NjU2NDQxNmQ2Zjc1NmU3NCAweDcwNmM2MTc5NjU3MjMxIDB4NzA2YzYxNzk2NTcyMzIKCi8vIFRoaXMgVEVBTCB3YXMgZ2VuZXJhdGVkIGJ5IFRFQUxTY3JpcHQgdjAuMTA2LjIKLy8gaHR0cHM6Ly9naXRodWIuY29tL2FsZ29yYW5kZm91bmRhdGlvbi9URUFMU2NyaXB0CgovLyBUaGlzIGNvbnRyYWN0IGlzIGNvbXBsaWFudCB3aXRoIGFuZC9vciBpbXBsZW1lbnRzIHRoZSBmb2xsb3dpbmcgQVJDczogWyBBUkM0IF0KCi8vIFRoZSBmb2xsb3dpbmcgdGVuIGxpbmVzIG9mIFRFQUwgaGFuZGxlIGluaXRpYWwgcHJvZ3JhbSBmbG93Ci8vIFRoaXMgcGF0dGVybiBpcyB1c2VkIHRvIG1ha2UgaXQgZWFzeSBmb3IgYW55b25lIHRvIHBhcnNlIHRoZSBzdGFydCBvZiB0aGUgcHJvZ3JhbSBhbmQgZGV0ZXJtaW5lIGlmIGEgc3BlY2lmaWMgYWN0aW9uIGlzIGFsbG93ZWQKLy8gSGVyZSwgYWN0aW9uIHJlZmVycyB0byB0aGUgT25Db21wbGV0ZSBpbiBjb21iaW5hdGlvbiB3aXRoIHdoZXRoZXIgdGhlIGFwcCBpcyBiZWluZyBjcmVhdGVkIG9yIGNhbGxlZAovLyBFdmVyeSBwb3NzaWJsZSBhY3Rpb24gZm9yIHRoaXMgY29udHJhY3QgaXMgcmVwcmVzZW50ZWQgaW4gdGhlIHN3aXRjaCBzdGF0ZW1lbnQKLy8gSWYgdGhlIGFjdGlvbiBpcyBub3QgaW1wbGVtZW50ZWQgaW4gdGhlIGNvbnRyYWN0LCBpdHMgcmVzcGVjdGl2ZSBicmFuY2ggd2lsbCBiZSAiKk5PVF9JTVBMRU1FTlRFRCIgd2hpY2gganVzdCBjb250YWlucyAiZXJyIgp0eG4gQXBwbGljYXRpb25JRAohCnB1c2hpbnQgNgoqCnR4biBPbkNvbXBsZXRpb24KKwpzd2l0Y2ggKmNhbGxfTm9PcCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKmNyZWF0ZV9Ob09wICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRAoKKk5PVF9JTVBMRU1FTlRFRDoKCS8vIFRoZSByZXF1ZXN0ZWQgYWN0aW9uIGlzIG5vdCBpbXBsZW1lbnRlZCBpbiB0aGlzIGNvbnRyYWN0LiBBcmUgeW91IHVzaW5nIHRoZSBjb3JyZWN0IE9uQ29tcGxldGU/IERpZCB5b3Ugc2V0IHlvdXIgYXBwIElEPwoJZXJyCgovLyBjcmVhdGVBcHBsaWNhdGlvbihhZGRyZXNzLGFkZHJlc3Mpdm9pZAoqYWJpX3JvdXRlX2NyZWF0ZUFwcGxpY2F0aW9uOgoJLy8gcGxheWVyMjogYWRkcmVzcwoJdHhuYSBBcHBsaWNhdGlvbkFyZ3MgMgoJZHVwCglsZW4KCWludGMgMiAvLyAzMgoJPT0KCgkvLyBhcmd1bWVudCAwIChwbGF5ZXIyKSBmb3IgY3JlYXRlQXBwbGljYXRpb24gbXVzdCBiZSBhIGFkZHJlc3MKCWFzc2VydAoKCS8vIHBsYXllcjE6IGFkZHJlc3MKCXR4bmEgQXBwbGljYXRpb25BcmdzIDEKCWR1cAoJbGVuCglpbnRjIDIgLy8gMzIKCT09CgoJLy8gYXJndW1lbnQgMSAocGxheWVyMSkgZm9yIGNyZWF0ZUFwcGxpY2F0aW9uIG11c3QgYmUgYSBhZGRyZXNzCglhc3NlcnQKCgkvLyBleGVjdXRlIGNyZWF0ZUFwcGxpY2F0aW9uKGFkZHJlc3MsYWRkcmVzcyl2b2lkCgljYWxsc3ViIGNyZWF0ZUFwcGxpY2F0aW9uCglpbnRjIDAgLy8gMQoJcmV0dXJuCgovLyBjcmVhdGVBcHBsaWNhdGlvbihwbGF5ZXIxOiBBZGRyZXNzLCBwbGF5ZXIyOiBBZGRyZXNzKTogdm9pZApjcmVhdGVBcHBsaWNhdGlvbjoKCXByb3RvIDIgMAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czoxOAoJLy8gdGhpcy5wbGF5ZXIxLnZhbHVlID0gcGxheWVyMQoJYnl0ZWMgMSAvLyAgInBsYXllcjEiCglmcmFtZV9kaWcgLTEgLy8gcGxheWVyMTogQWRkcmVzcwoJYXBwX2dsb2JhbF9wdXQKCgkvLyBjb250cmFjdHMvR2FtZUNvbnRyYWN0LmFsZ28udHM6MTkKCS8vIHRoaXMucGxheWVyMi52YWx1ZSA9IHBsYXllcjIKCWJ5dGVjIDIgLy8gICJwbGF5ZXIyIgoJZnJhbWVfZGlnIC0yIC8vIHBsYXllcjI6IEFkZHJlc3MKCWFwcF9nbG9iYWxfcHV0CgoJLy8gY29udHJhY3RzL0dhbWVDb250cmFjdC5hbGdvLnRzOjIwCgkvLyB0aGlzLmRlcG9zaXRlZEFtb3VudC52YWx1ZSA9IDAKCWJ5dGVjIDAgLy8gICJkZXBvc2l0ZWRBbW91bnQiCglpbnRjIDEgLy8gMAoJYXBwX2dsb2JhbF9wdXQKCgkvLyBjb250cmFjdHMvR2FtZUNvbnRyYWN0LmFsZ28udHM6MjEKCS8vIHRoaXMubWF4RGVwb3NpdEFtb3VudC52YWx1ZSA9IDUKCXB1c2hieXRlcyAweDZkNjE3ODQ0NjU3MDZmNzM2OTc0NDE2ZDZmNzU2ZTc0IC8vICJtYXhEZXBvc2l0QW1vdW50IgoJcHVzaGludCA1CglhcHBfZ2xvYmFsX3B1dAoJcmV0c3ViCgovLyBkZXBvc2l0ZnVuZHModHhuKXZvaWQKKmFiaV9yb3V0ZV9kZXBvc2l0ZnVuZHM6CgkvLyBmdHJhbnN4OiB0eG4KCXR4biBHcm91cEluZGV4CglpbnRjIDAgLy8gMQoJLQoKCS8vIGV4ZWN1dGUgZGVwb3NpdGZ1bmRzKHR4bil2b2lkCgljYWxsc3ViIGRlcG9zaXRmdW5kcwoJaW50YyAwIC8vIDEKCXJldHVybgoKLy8gZGVwb3NpdGZ1bmRzKGZ0cmFuc3ggOiBUeG4pOiB2b2lkCmRlcG9zaXRmdW5kczoKCXByb3RvIDEgMAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czoyOAoJLy8gYXNzZXJ0KAoJLy8gICAgICAgICAgICAgdGhpcy50eG4uc2VuZGVyID09PSB0aGlzLmFwcC5jcmVhdG9yIHx8CgkvLyAgICAgICAgICAgICAgIHRoaXMudHhuLnNlbmRlciA9PT0gdGhpcy5wbGF5ZXIxLnZhbHVlIHx8CgkvLyAgICAgICAgICAgICAgIHRoaXMudHhuLnNlbmRlciA9PT0gdGhpcy5wbGF5ZXIyLnZhbHVlCgkvLyAgICAgICAgICAgKQoJdHhuIFNlbmRlcgoJdHhuYSBBcHBsaWNhdGlvbnMgMAoJYXBwX3BhcmFtc19nZXQgQXBwQ3JlYXRvcgoJcG9wCgk9PQoJZHVwCglibnogKnNraXBfb3IwCgl0eG4gU2VuZGVyCglieXRlYyAxIC8vICAicGxheWVyMSIKCWFwcF9nbG9iYWxfZ2V0Cgk9PQoJfHwKCipza2lwX29yMDoKCWR1cAoJYm56ICpza2lwX29yMQoJdHhuIFNlbmRlcgoJYnl0ZWMgMiAvLyAgInBsYXllcjIiCglhcHBfZ2xvYmFsX2dldAoJPT0KCXx8Cgoqc2tpcF9vcjE6Cglhc3NlcnQKCgkvLyBjb250cmFjdHMvR2FtZUNvbnRyYWN0LmFsZ28udHM6MzQKCS8vIHZlcmlmeVBheVR4bihmdHJhbnN4LCB7CgkvLyAgICAgICAgICAgICByZWNlaXZlcjogdGhpcy5hcHAuYWRkcmVzcywKCS8vCgkvLwoJLy8gICAgICAgICB9KQoJLy8gdmVyaWZ5IHBheQoJZnJhbWVfZGlnIC0xIC8vIGZ0cmFuc3g6IFR4bgoJZ3R4bnMgVHlwZUVudW0KCWludGMgMCAvLyAgcGF5Cgk9PQoKCS8vIHRyYW5zYWN0aW9uIHZlcmlmaWNhdGlvbiBmYWlsZWQ6IHsidHhuIjoiZnRyYW5zeCIsImZpZWxkIjoidHlwZUVudW0iLCJleHBlY3RlZCI6InBheSJ9Cglhc3NlcnQKCgkvLyB2ZXJpZnkgcmVjZWl2ZXIKCWZyYW1lX2RpZyAtMSAvLyBmdHJhbnN4OiBUeG4KCWd0eG5zIFJlY2VpdmVyCglnbG9iYWwgQ3VycmVudEFwcGxpY2F0aW9uQWRkcmVzcwoJPT0KCgkvLyB0cmFuc2FjdGlvbiB2ZXJpZmljYXRpb24gZmFpbGVkOiB7InR4biI6ImZ0cmFuc3giLCJmaWVsZCI6InJlY2VpdmVyIiwiZXhwZWN0ZWQiOiJ0aGlzLmFwcC5hZGRyZXNzIn0KCWFzc2VydAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czozOQoJLy8gdGhpcy5kZXBvc2l0ZWRBbW91bnQudmFsdWUgKz0gZnRyYW5zeC5hc3NldEFtb3VudAoJYnl0ZWMgMCAvLyAgImRlcG9zaXRlZEFtb3VudCIKCWFwcF9nbG9iYWxfZ2V0CglmcmFtZV9kaWcgLTEgLy8gZnRyYW5zeDogVHhuCglndHhucyBBc3NldEFtb3VudAoJKwoJYnl0ZWMgMCAvLyAgImRlcG9zaXRlZEFtb3VudCIKCXN3YXAKCWFwcF9nbG9iYWxfcHV0CglyZXRzdWIKCi8vIHNlbmRGdW5kcyhhZGRyZXNzKXZvaWQKKmFiaV9yb3V0ZV9zZW5kRnVuZHM6CgkvLyBwbGF5ZXI6IGFkZHJlc3MKCXR4bmEgQXBwbGljYXRpb25BcmdzIDEKCWR1cAoJbGVuCglpbnRjIDIgLy8gMzIKCT09CgoJLy8gYXJndW1lbnQgMCAocGxheWVyKSBmb3Igc2VuZEZ1bmRzIG11c3QgYmUgYSBhZGRyZXNzCglhc3NlcnQKCgkvLyBleGVjdXRlIHNlbmRGdW5kcyhhZGRyZXNzKXZvaWQKCWNhbGxzdWIgc2VuZEZ1bmRzCglpbnRjIDAgLy8gMQoJcmV0dXJuCgovLyBzZW5kRnVuZHMocGxheWVyOiBBZGRyZXNzKTogdm9pZApzZW5kRnVuZHM6Cglwcm90byAxIDAKCgkvLyBjb250cmFjdHMvR2FtZUNvbnRyYWN0LmFsZ28udHM6NDcKCS8vIGFzc2VydCgKCS8vICAgICAgICAgICAgIHRoaXMudHhuLnNlbmRlciA9PT0gdGhpcy5hcHAuY3JlYXRvcgoJLy8gICAgICAgICAgICkKCXR4biBTZW5kZXIKCXR4bmEgQXBwbGljYXRpb25zIDAKCWFwcF9wYXJhbXNfZ2V0IEFwcENyZWF0b3IKCXBvcAoJPT0KCWFzc2VydAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czo1MAoJLy8gc2VuZFBheW1lbnQoewoJLy8gICAgICAgICAgICAgcmVjZWl2ZXI6IHBsYXllciwKCS8vICAgICAgICAgICAgIGFtb3VudDogdGhpcy5kZXBvc2l0ZWRBbW91bnQudmFsdWUsCgkvLyAgICAgICAgICAgfSkKCWl0eG5fYmVnaW4KCWludGMgMCAvLyAgcGF5CglpdHhuX2ZpZWxkIFR5cGVFbnVtCgoJLy8gY29udHJhY3RzL0dhbWVDb250cmFjdC5hbGdvLnRzOjUxCgkvLyByZWNlaXZlcjogcGxheWVyCglmcmFtZV9kaWcgLTEgLy8gcGxheWVyOiBBZGRyZXNzCglpdHhuX2ZpZWxkIFJlY2VpdmVyCgoJLy8gY29udHJhY3RzL0dhbWVDb250cmFjdC5hbGdvLnRzOjUyCgkvLyBhbW91bnQ6IHRoaXMuZGVwb3NpdGVkQW1vdW50LnZhbHVlCglieXRlYyAwIC8vICAiZGVwb3NpdGVkQW1vdW50IgoJYXBwX2dsb2JhbF9nZXQKCWl0eG5fZmllbGQgQW1vdW50CgoJLy8gRmVlIGZpZWxkIG5vdCBzZXQsIGRlZmF1bHRpbmcgdG8gMAoJaW50YyAxIC8vIDAKCWl0eG5fZmllbGQgRmVlCgoJLy8gU3VibWl0IGlubmVyIHRyYW5zYWN0aW9uCglpdHhuX3N1Ym1pdAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czo1NAoJLy8gdGhpcy5kZXBvc2l0ZWRBbW91bnQudmFsdWUgPSAwCglieXRlYyAwIC8vICAiZGVwb3NpdGVkQW1vdW50IgoJaW50YyAxIC8vIDAKCWFwcF9nbG9iYWxfcHV0CglyZXRzdWIKCipjcmVhdGVfTm9PcDoKCXB1c2hieXRlcyAweGI0Yzc3ZDcxIC8vIG1ldGhvZCAiY3JlYXRlQXBwbGljYXRpb24oYWRkcmVzcyxhZGRyZXNzKXZvaWQiCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAwCgltYXRjaCAqYWJpX3JvdXRlX2NyZWF0ZUFwcGxpY2F0aW9uCgoJLy8gdGhpcyBjb250cmFjdCBkb2VzIG5vdCBpbXBsZW1lbnQgdGhlIGdpdmVuIEFCSSBtZXRob2QgZm9yIGNyZWF0ZSBOb09wCgllcnIKCipjYWxsX05vT3A6CglwdXNoYnl0ZXMgMHg0ODY3NTQ3MCAvLyBtZXRob2QgImRlcG9zaXRmdW5kcyh0eG4pdm9pZCIKCXB1c2hieXRlcyAweDNhMTlkMGRlIC8vIG1ldGhvZCAic2VuZEZ1bmRzKGFkZHJlc3Mpdm9pZCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoICphYmlfcm91dGVfZGVwb3NpdGZ1bmRzICphYmlfcm91dGVfc2VuZEZ1bmRzCgoJLy8gdGhpcyBjb250cmFjdCBkb2VzIG5vdCBpbXBsZW1lbnQgdGhlIGdpdmVuIEFCSSBtZXRob2QgZm9yIGNhbGwgTm9PcAoJZXJy","clear":"I3ByYWdtYSB2ZXJzaW9uIDEw"},"byteCode":{"approval":"CiADAQAgJgMPZGVwb3NpdGVkQW1vdW50B3BsYXllcjEHcGxheWVyMjEYFIEGCzEZCI0MALoAAAAAAAAAAAAAAKwAAAAAAAAAAAAAADYaAkkVJBJENhoBSRUkEkSIAAIiQ4oCACmL/2cqi/5nKCNngBBtYXhEZXBvc2l0QW1vdW50gQVniTEWIgmIAAIiQ4oBADEANjIAcgdIEklAAAYxAClkEhFJQAAGMQAqZBIRRIv/OBAiEkSL/zgHMgoSRChki/84EggoTGeJNhoBSRUkEkSIAAIiQ4oBADEANjIAcgdIEkSxIrIQi/+yByhksggjsgGzKCNniYAEtMd9cTYaAI4B/0gAgARIZ1RwgAQ6GdDeNhoAjgL/a/+vAA==","clear":"Cg=="},"compilerInfo":{"compiler":"algod","compilerVersion":{"major":4,"minor":0,"patch":2,"commitHash":"6b940281"}}} as unknown as Arc56Contract
+export const APP_SPEC: Arc56Contract = {"name":"Fight","desc":"","methods":[{"name":"createApplication","args":[{"name":"player1","type":"address"},{"name":"player2","type":"address"}],"returns":{"type":"void"},"actions":{"create":["NoOp"],"call":[]}},{"name":"createBox","args":[],"returns":{"type":"void"},"actions":{"create":[],"call":["NoOp"]}},{"name":"depositfunds","args":[{"name":"ftransx","type":"txn"}],"returns":{"type":"void"},"actions":{"create":[],"call":["NoOp"]}},{"name":"sendFunds","args":[{"name":"player","type":"address"}],"returns":{"type":"void"},"actions":{"create":[],"call":["NoOp"]}},{"name":"joinGame","args":[{"name":"player","type":"address"}],"returns":{"type":"void"},"actions":{"create":[],"call":["NoOp"]}}],"arcs":[4,56],"structs":{},"state":{"schema":{"global":{"bytes":4,"ints":2},"local":{"bytes":0,"ints":0}},"keys":{"global":{"player1":{"key":"cGxheWVyMQ==","keyType":"AVMBytes","valueType":"address"},"player2":{"key":"cGxheWVyMg==","keyType":"AVMBytes","valueType":"address"},"depositedAmount":{"key":"ZGVwb3NpdGVkQW1vdW50","keyType":"AVMBytes","valueType":"uint64"},"maxDepositAmount":{"key":"bWF4RGVwb3NpdEFtb3VudA==","keyType":"AVMBytes","valueType":"uint64"},"winner":{"key":"d2lubmVy","keyType":"AVMBytes","valueType":"address"},"status":{"key":"c3RhdHVz","keyType":"AVMBytes","valueType":"string"}},"local":{},"box":{"player1Move":{"key":"cGxheWVyMU1vdmU=","keyType":"AVMBytes","valueType":"string"},"player2Move":{"key":"cGxheWVyMk1vdmU=","keyType":"AVMBytes","valueType":"string"}}},"maps":{"global":{},"local":{},"box":{}}},"bareActions":{"create":[],"call":[]},"sourceInfo":{"approval":{"sourceInfo":[{"teal":1,"source":"contracts/GameContract.algo.ts:4","pc":[0]},{"teal":2,"source":"contracts/GameContract.algo.ts:4","pc":[1,2,3,4,5,6,7]},{"teal":3,"source":"contracts/GameContract.algo.ts:4","pc":[8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41]},{"teal":15,"source":"contracts/GameContract.algo.ts:4","pc":[42,43]},{"teal":16,"source":"contracts/GameContract.algo.ts:4","pc":[44]},{"teal":17,"source":"contracts/GameContract.algo.ts:4","pc":[45,46]},{"teal":18,"source":"contracts/GameContract.algo.ts:4","pc":[47]},{"teal":19,"source":"contracts/GameContract.algo.ts:4","pc":[48,49]},{"teal":20,"source":"contracts/GameContract.algo.ts:4","pc":[50]},{"teal":21,"source":"contracts/GameContract.algo.ts:4","pc":[51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76]},{"teal":25,"source":"contracts/GameContract.algo.ts:4","errorMessage":"The requested action is not implemented in this contract. Are you using the correct OnComplete? Did you set your app ID?","pc":[77]},{"teal":30,"source":"contracts/GameContract.algo.ts:18","pc":[78,79,80]},{"teal":31,"source":"contracts/GameContract.algo.ts:18","pc":[81]},{"teal":32,"source":"contracts/GameContract.algo.ts:18","pc":[82]},{"teal":33,"source":"contracts/GameContract.algo.ts:18","pc":[83]},{"teal":34,"source":"contracts/GameContract.algo.ts:18","pc":[84]},{"teal":37,"source":"contracts/GameContract.algo.ts:18","errorMessage":"argument 0 (player2) for createApplication must be a address","pc":[85]},{"teal":40,"source":"contracts/GameContract.algo.ts:18","pc":[86,87,88]},{"teal":41,"source":"contracts/GameContract.algo.ts:18","pc":[89]},{"teal":42,"source":"contracts/GameContract.algo.ts:18","pc":[90]},{"teal":43,"source":"contracts/GameContract.algo.ts:18","pc":[91]},{"teal":44,"source":"contracts/GameContract.algo.ts:18","pc":[92]},{"teal":47,"source":"contracts/GameContract.algo.ts:18","errorMessage":"argument 1 (player1) for createApplication must be a address","pc":[93]},{"teal":50,"source":"contracts/GameContract.algo.ts:18","pc":[94,95,96]},{"teal":51,"source":"contracts/GameContract.algo.ts:18","pc":[97]},{"teal":52,"source":"contracts/GameContract.algo.ts:18","pc":[98]},{"teal":56,"source":"contracts/GameContract.algo.ts:18","pc":[99,100,101]},{"teal":60,"source":"contracts/GameContract.algo.ts:21","pc":[102]},{"teal":61,"source":"contracts/GameContract.algo.ts:21","pc":[103,104]},{"teal":62,"source":"contracts/GameContract.algo.ts:21","pc":[105]},{"teal":66,"source":"contracts/GameContract.algo.ts:22","pc":[106]},{"teal":67,"source":"contracts/GameContract.algo.ts:22","pc":[107,108]},{"teal":68,"source":"contracts/GameContract.algo.ts:22","pc":[109]},{"teal":72,"source":"contracts/GameContract.algo.ts:23","pc":[110]},{"teal":73,"source":"contracts/GameContract.algo.ts:23","pc":[111]},{"teal":74,"source":"contracts/GameContract.algo.ts:23","pc":[112]},{"teal":78,"source":"contracts/GameContract.algo.ts:24","pc":[113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130]},{"teal":79,"source":"contracts/GameContract.algo.ts:24","pc":[131,132]},{"teal":80,"source":"contracts/GameContract.algo.ts:24","pc":[133]},{"teal":81,"source":"contracts/GameContract.algo.ts:18","pc":[134]},{"teal":86,"source":"contracts/GameContract.algo.ts:28","pc":[135,136,137]},{"teal":87,"source":"contracts/GameContract.algo.ts:28","pc":[138]},{"teal":88,"source":"contracts/GameContract.algo.ts:28","pc":[139]},{"teal":92,"source":"contracts/GameContract.algo.ts:28","pc":[140,141,142]},{"teal":96,"source":"contracts/GameContract.algo.ts:29","pc":[143,144,145,146,147,148,149,150,151,152,153,154,155]},{"teal":97,"source":"contracts/GameContract.algo.ts:29","pc":[156]},{"teal":98,"source":"contracts/GameContract.algo.ts:29","pc":[157]},{"teal":99,"source":"contracts/GameContract.algo.ts:29","pc":[158]},{"teal":103,"source":"contracts/GameContract.algo.ts:30","pc":[159,160,161,162,163,164,165,166,167,168,169,170,171]},{"teal":104,"source":"contracts/GameContract.algo.ts:30","pc":[172]},{"teal":105,"source":"contracts/GameContract.algo.ts:30","pc":[173]},{"teal":106,"source":"contracts/GameContract.algo.ts:30","pc":[174]},{"teal":107,"source":"contracts/GameContract.algo.ts:28","pc":[175]},{"teal":112,"source":"contracts/GameContract.algo.ts:34","pc":[176,177]},{"teal":113,"source":"contracts/GameContract.algo.ts:34","pc":[178]},{"teal":114,"source":"contracts/GameContract.algo.ts:34","pc":[179]},{"teal":117,"source":"contracts/GameContract.algo.ts:34","pc":[180,181,182]},{"teal":118,"source":"contracts/GameContract.algo.ts:34","pc":[183]},{"teal":119,"source":"contracts/GameContract.algo.ts:34","pc":[184]},{"teal":123,"source":"contracts/GameContract.algo.ts:34","pc":[185,186,187]},{"teal":131,"source":"contracts/GameContract.algo.ts:36","pc":[188,189]},{"teal":132,"source":"contracts/GameContract.algo.ts:36","pc":[190,191,192]},{"teal":133,"source":"contracts/GameContract.algo.ts:36","pc":[193,194]},{"teal":134,"source":"contracts/GameContract.algo.ts:36","pc":[195]},{"teal":135,"source":"contracts/GameContract.algo.ts:36","pc":[196]},{"teal":136,"source":"contracts/GameContract.algo.ts:36","pc":[197]},{"teal":137,"source":"contracts/GameContract.algo.ts:36","pc":[198,199,200]},{"teal":138,"source":"contracts/GameContract.algo.ts:37","pc":[201,202]},{"teal":139,"source":"contracts/GameContract.algo.ts:37","pc":[203]},{"teal":140,"source":"contracts/GameContract.algo.ts:37","pc":[204]},{"teal":141,"source":"contracts/GameContract.algo.ts:37","pc":[205]},{"teal":142,"source":"contracts/GameContract.algo.ts:36","pc":[206]},{"teal":145,"source":"contracts/GameContract.algo.ts:37","pc":[207]},{"teal":146,"source":"contracts/GameContract.algo.ts:37","pc":[208,209,210]},{"teal":147,"source":"contracts/GameContract.algo.ts:38","pc":[211,212]},{"teal":148,"source":"contracts/GameContract.algo.ts:38","pc":[213]},{"teal":149,"source":"contracts/GameContract.algo.ts:38","pc":[214]},{"teal":150,"source":"contracts/GameContract.algo.ts:38","pc":[215]},{"teal":151,"source":"contracts/GameContract.algo.ts:37","pc":[216]},{"teal":154,"source":"contracts/GameContract.algo.ts:35","pc":[217]},{"teal":163,"source":"contracts/GameContract.algo.ts:41","pc":[218,219]},{"teal":164,"source":"contracts/GameContract.algo.ts:41","pc":[220,221]},{"teal":165,"source":"contracts/GameContract.algo.ts:41","pc":[222]},{"teal":166,"source":"contracts/GameContract.algo.ts:41","pc":[223]},{"teal":169,"source":"contracts/GameContract.algo.ts:41","errorMessage":"transaction verification failed: {\"txn\":\"ftransx\",\"field\":\"typeEnum\",\"expected\":\"pay\"}","pc":[224]},{"teal":172,"source":"contracts/GameContract.algo.ts:41","pc":[225,226]},{"teal":173,"source":"contracts/GameContract.algo.ts:42","pc":[227,228]},{"teal":174,"source":"contracts/GameContract.algo.ts:42","pc":[229,230]},{"teal":175,"source":"contracts/GameContract.algo.ts:42","pc":[231]},{"teal":178,"source":"contracts/GameContract.algo.ts:42","errorMessage":"transaction verification failed: {\"txn\":\"ftransx\",\"field\":\"receiver\",\"expected\":\"this.app.address\"}","pc":[232]},{"teal":182,"source":"contracts/GameContract.algo.ts:46","pc":[233]},{"teal":183,"source":"contracts/GameContract.algo.ts:46","pc":[234]},{"teal":184,"source":"contracts/GameContract.algo.ts:46","pc":[235,236]},{"teal":185,"source":"contracts/GameContract.algo.ts:46","pc":[237,238]},{"teal":186,"source":"contracts/GameContract.algo.ts:46","pc":[239]},{"teal":187,"source":"contracts/GameContract.algo.ts:46","pc":[240]},{"teal":188,"source":"contracts/GameContract.algo.ts:46","pc":[241]},{"teal":189,"source":"contracts/GameContract.algo.ts:46","pc":[242]},{"teal":190,"source":"contracts/GameContract.algo.ts:34","pc":[243]},{"teal":195,"source":"contracts/GameContract.algo.ts:52","pc":[244,245,246]},{"teal":196,"source":"contracts/GameContract.algo.ts:52","pc":[247]},{"teal":197,"source":"contracts/GameContract.algo.ts:52","pc":[248]},{"teal":198,"source":"contracts/GameContract.algo.ts:52","pc":[249]},{"teal":199,"source":"contracts/GameContract.algo.ts:52","pc":[250]},{"teal":202,"source":"contracts/GameContract.algo.ts:52","errorMessage":"argument 0 (player) for sendFunds must be a address","pc":[251]},{"teal":205,"source":"contracts/GameContract.algo.ts:52","pc":[252,253,254]},{"teal":206,"source":"contracts/GameContract.algo.ts:52","pc":[255]},{"teal":207,"source":"contracts/GameContract.algo.ts:52","pc":[256]},{"teal":211,"source":"contracts/GameContract.algo.ts:52","pc":[257,258,259]},{"teal":217,"source":"contracts/GameContract.algo.ts:55","pc":[260,261]},{"teal":218,"source":"contracts/GameContract.algo.ts:55","pc":[262,263,264]},{"teal":219,"source":"contracts/GameContract.algo.ts:55","pc":[265,266]},{"teal":220,"source":"contracts/GameContract.algo.ts:55","pc":[267]},{"teal":221,"source":"contracts/GameContract.algo.ts:55","pc":[268]},{"teal":222,"source":"contracts/GameContract.algo.ts:54","pc":[269]},{"teal":229,"source":"contracts/GameContract.algo.ts:57","pc":[270]},{"teal":230,"source":"contracts/GameContract.algo.ts:57","pc":[271]},{"teal":231,"source":"contracts/GameContract.algo.ts:57","pc":[272,273]},{"teal":235,"source":"contracts/GameContract.algo.ts:58","pc":[274,275]},{"teal":236,"source":"contracts/GameContract.algo.ts:58","pc":[276,277]},{"teal":240,"source":"contracts/GameContract.algo.ts:59","pc":[278]},{"teal":241,"source":"contracts/GameContract.algo.ts:59","pc":[279]},{"teal":242,"source":"contracts/GameContract.algo.ts:59","pc":[280,281]},{"teal":245,"source":"contracts/GameContract.algo.ts:57","pc":[282]},{"teal":246,"source":"contracts/GameContract.algo.ts:57","pc":[283,284]},{"teal":249,"source":"contracts/GameContract.algo.ts:57","pc":[285]},{"teal":253,"source":"contracts/GameContract.algo.ts:61","pc":[286]},{"teal":254,"source":"contracts/GameContract.algo.ts:61","pc":[287]},{"teal":255,"source":"contracts/GameContract.algo.ts:61","pc":[288]},{"teal":256,"source":"contracts/GameContract.algo.ts:52","pc":[289]},{"teal":261,"source":"contracts/GameContract.algo.ts:68","pc":[290,291,292]},{"teal":262,"source":"contracts/GameContract.algo.ts:68","pc":[293]},{"teal":263,"source":"contracts/GameContract.algo.ts:68","pc":[294]},{"teal":264,"source":"contracts/GameContract.algo.ts:68","pc":[295]},{"teal":265,"source":"contracts/GameContract.algo.ts:68","pc":[296]},{"teal":268,"source":"contracts/GameContract.algo.ts:68","errorMessage":"argument 0 (player) for joinGame must be a address","pc":[297]},{"teal":271,"source":"contracts/GameContract.algo.ts:68","pc":[298,299,300]},{"teal":272,"source":"contracts/GameContract.algo.ts:68","pc":[301]},{"teal":273,"source":"contracts/GameContract.algo.ts:68","pc":[302]},{"teal":277,"source":"contracts/GameContract.algo.ts:68","pc":[303,304,305]},{"teal":283,"source":"contracts/GameContract.algo.ts:70","pc":[306,307,308]},{"teal":284,"source":"contracts/GameContract.algo.ts:70","pc":[309]},{"teal":285,"source":"contracts/GameContract.algo.ts:70","pc":[310]},{"teal":286,"source":"contracts/GameContract.algo.ts:70","pc":[311]},{"teal":287,"source":"contracts/GameContract.algo.ts:70","pc":[312]},{"teal":288,"source":"contracts/GameContract.algo.ts:70","pc":[313]},{"teal":289,"source":"contracts/GameContract.algo.ts:69","pc":[314]},{"teal":293,"source":"contracts/GameContract.algo.ts:73","pc":[315]},{"teal":294,"source":"contracts/GameContract.algo.ts:73","pc":[316,317]},{"teal":295,"source":"contracts/GameContract.algo.ts:73","pc":[318]},{"teal":296,"source":"contracts/GameContract.algo.ts:68","pc":[319]},{"teal":299,"source":"contracts/GameContract.algo.ts:4","pc":[320,321,322,323,324,325]},{"teal":300,"source":"contracts/GameContract.algo.ts:4","pc":[326,327,328]},{"teal":301,"source":"contracts/GameContract.algo.ts:4","pc":[329,330,331,332]},{"teal":304,"source":"contracts/GameContract.algo.ts:4","errorMessage":"this contract does not implement the given ABI method for create NoOp","pc":[333]},{"teal":307,"source":"contracts/GameContract.algo.ts:4","pc":[334,335,336,337,338,339]},{"teal":308,"source":"contracts/GameContract.algo.ts:4","pc":[340,341,342,343,344,345]},{"teal":309,"source":"contracts/GameContract.algo.ts:4","pc":[346,347,348,349,350,351]},{"teal":310,"source":"contracts/GameContract.algo.ts:4","pc":[352,353,354,355,356,357]},{"teal":311,"source":"contracts/GameContract.algo.ts:4","pc":[358,359,360]},{"teal":312,"source":"contracts/GameContract.algo.ts:4","pc":[361,362,363,364,365,366,367,368,369,370]},{"teal":315,"source":"contracts/GameContract.algo.ts:4","errorMessage":"this contract does not implement the given ABI method for call NoOp","pc":[371]}],"pcOffsetMethod":"none"},"clear":{"sourceInfo":[],"pcOffsetMethod":"none"}},"source":{"approval":"I3ByYWdtYSB2ZXJzaW9uIDEwCmludGNibG9jayAxIDMyIDAgNDAwCmJ5dGVjYmxvY2sgMHg2NDY1NzA2ZjczNjk3NDY1NjQ0MTZkNmY3NTZlNzQgMHg3MDZjNjE3OTY1NzIzMiAweDcwNmM2MTc5NjU3MjMxCgovLyBUaGlzIFRFQUwgd2FzIGdlbmVyYXRlZCBieSBURUFMU2NyaXB0IHYwLjEwNi4yCi8vIGh0dHBzOi8vZ2l0aHViLmNvbS9hbGdvcmFuZGZvdW5kYXRpb24vVEVBTFNjcmlwdAoKLy8gVGhpcyBjb250cmFjdCBpcyBjb21wbGlhbnQgd2l0aCBhbmQvb3IgaW1wbGVtZW50cyB0aGUgZm9sbG93aW5nIEFSQ3M6IFsgQVJDNCBdCgovLyBUaGUgZm9sbG93aW5nIHRlbiBsaW5lcyBvZiBURUFMIGhhbmRsZSBpbml0aWFsIHByb2dyYW0gZmxvdwovLyBUaGlzIHBhdHRlcm4gaXMgdXNlZCB0byBtYWtlIGl0IGVhc3kgZm9yIGFueW9uZSB0byBwYXJzZSB0aGUgc3RhcnQgb2YgdGhlIHByb2dyYW0gYW5kIGRldGVybWluZSBpZiBhIHNwZWNpZmljIGFjdGlvbiBpcyBhbGxvd2VkCi8vIEhlcmUsIGFjdGlvbiByZWZlcnMgdG8gdGhlIE9uQ29tcGxldGUgaW4gY29tYmluYXRpb24gd2l0aCB3aGV0aGVyIHRoZSBhcHAgaXMgYmVpbmcgY3JlYXRlZCBvciBjYWxsZWQKLy8gRXZlcnkgcG9zc2libGUgYWN0aW9uIGZvciB0aGlzIGNvbnRyYWN0IGlzIHJlcHJlc2VudGVkIGluIHRoZSBzd2l0Y2ggc3RhdGVtZW50Ci8vIElmIHRoZSBhY3Rpb24gaXMgbm90IGltcGxlbWVudGVkIGluIHRoZSBjb250cmFjdCwgaXRzIHJlc3BlY3RpdmUgYnJhbmNoIHdpbGwgYmUgIipOT1RfSU1QTEVNRU5URUQiIHdoaWNoIGp1c3QgY29udGFpbnMgImVyciIKdHhuIEFwcGxpY2F0aW9uSUQKIQpwdXNoaW50IDYKKgp0eG4gT25Db21wbGV0aW9uCisKc3dpdGNoICpjYWxsX05vT3AgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpjcmVhdGVfTm9PcCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQgKk5PVF9JTVBMRU1FTlRFRCAqTk9UX0lNUExFTUVOVEVEICpOT1RfSU1QTEVNRU5URUQKCipOT1RfSU1QTEVNRU5URUQ6CgkvLyBUaGUgcmVxdWVzdGVkIGFjdGlvbiBpcyBub3QgaW1wbGVtZW50ZWQgaW4gdGhpcyBjb250cmFjdC4gQXJlIHlvdSB1c2luZyB0aGUgY29ycmVjdCBPbkNvbXBsZXRlPyBEaWQgeW91IHNldCB5b3VyIGFwcCBJRD8KCWVycgoKLy8gY3JlYXRlQXBwbGljYXRpb24oYWRkcmVzcyxhZGRyZXNzKXZvaWQKKmFiaV9yb3V0ZV9jcmVhdGVBcHBsaWNhdGlvbjoKCS8vIHBsYXllcjI6IGFkZHJlc3MKCXR4bmEgQXBwbGljYXRpb25BcmdzIDIKCWR1cAoJbGVuCglpbnRjIDEgLy8gMzIKCT09CgoJLy8gYXJndW1lbnQgMCAocGxheWVyMikgZm9yIGNyZWF0ZUFwcGxpY2F0aW9uIG11c3QgYmUgYSBhZGRyZXNzCglhc3NlcnQKCgkvLyBwbGF5ZXIxOiBhZGRyZXNzCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAxCglkdXAKCWxlbgoJaW50YyAxIC8vIDMyCgk9PQoKCS8vIGFyZ3VtZW50IDEgKHBsYXllcjEpIGZvciBjcmVhdGVBcHBsaWNhdGlvbiBtdXN0IGJlIGEgYWRkcmVzcwoJYXNzZXJ0CgoJLy8gZXhlY3V0ZSBjcmVhdGVBcHBsaWNhdGlvbihhZGRyZXNzLGFkZHJlc3Mpdm9pZAoJY2FsbHN1YiBjcmVhdGVBcHBsaWNhdGlvbgoJaW50YyAwIC8vIDEKCXJldHVybgoKLy8gY3JlYXRlQXBwbGljYXRpb24ocGxheWVyMTogQWRkcmVzcywgcGxheWVyMjogQWRkcmVzcyk6IHZvaWQKY3JlYXRlQXBwbGljYXRpb246Cglwcm90byAyIDAKCgkvLyBjb250cmFjdHMvR2FtZUNvbnRyYWN0LmFsZ28udHM6MjEKCS8vIHRoaXMucGxheWVyMS52YWx1ZSA9IHBsYXllcjEKCWJ5dGVjIDIgLy8gICJwbGF5ZXIxIgoJZnJhbWVfZGlnIC0xIC8vIHBsYXllcjE6IEFkZHJlc3MKCWFwcF9nbG9iYWxfcHV0CgoJLy8gY29udHJhY3RzL0dhbWVDb250cmFjdC5hbGdvLnRzOjIyCgkvLyB0aGlzLnBsYXllcjIudmFsdWUgPSBwbGF5ZXIyCglieXRlYyAxIC8vICAicGxheWVyMiIKCWZyYW1lX2RpZyAtMiAvLyBwbGF5ZXIyOiBBZGRyZXNzCglhcHBfZ2xvYmFsX3B1dAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czoyMwoJLy8gdGhpcy5kZXBvc2l0ZWRBbW91bnQudmFsdWUgPSAwCglieXRlYyAwIC8vICAiZGVwb3NpdGVkQW1vdW50IgoJaW50YyAyIC8vIDAKCWFwcF9nbG9iYWxfcHV0CgoJLy8gY29udHJhY3RzL0dhbWVDb250cmFjdC5hbGdvLnRzOjI0CgkvLyB0aGlzLm1heERlcG9zaXRBbW91bnQudmFsdWUgPSA1CglwdXNoYnl0ZXMgMHg2ZDYxNzg0NDY1NzA2ZjczNjk3NDQxNmQ2Zjc1NmU3NCAvLyAibWF4RGVwb3NpdEFtb3VudCIKCXB1c2hpbnQgNQoJYXBwX2dsb2JhbF9wdXQKCXJldHN1YgoKLy8gY3JlYXRlQm94KCl2b2lkCiphYmlfcm91dGVfY3JlYXRlQm94OgoJLy8gZXhlY3V0ZSBjcmVhdGVCb3goKXZvaWQKCWNhbGxzdWIgY3JlYXRlQm94CglpbnRjIDAgLy8gMQoJcmV0dXJuCgovLyBjcmVhdGVCb3goKTogdm9pZApjcmVhdGVCb3g6Cglwcm90byAwIDAKCgkvLyBjb250cmFjdHMvR2FtZUNvbnRyYWN0LmFsZ28udHM6MjkKCS8vIHRoaXMucGxheWVyMU1vdmUuY3JlYXRlKDQwMCkKCXB1c2hieXRlcyAweDcwNmM2MTc5NjU3MjMxNGQ2Zjc2NjUgLy8gInBsYXllcjFNb3ZlIgoJaW50YyAzIC8vIDQwMAoJYm94X2NyZWF0ZQoJcG9wCgoJLy8gY29udHJhY3RzL0dhbWVDb250cmFjdC5hbGdvLnRzOjMwCgkvLyB0aGlzLnBsYXllcjJNb3ZlLmNyZWF0ZSg0MDApCglwdXNoYnl0ZXMgMHg3MDZjNjE3OTY1NzIzMjRkNmY3NjY1IC8vICJwbGF5ZXIyTW92ZSIKCWludGMgMyAvLyA0MDAKCWJveF9jcmVhdGUKCXBvcAoJcmV0c3ViCgovLyBkZXBvc2l0ZnVuZHModHhuKXZvaWQKKmFiaV9yb3V0ZV9kZXBvc2l0ZnVuZHM6CgkvLyBmdHJhbnN4OiB0eG4KCXR4biBHcm91cEluZGV4CglpbnRjIDAgLy8gMQoJLQoKCS8vIGV4ZWN1dGUgZGVwb3NpdGZ1bmRzKHR4bil2b2lkCgljYWxsc3ViIGRlcG9zaXRmdW5kcwoJaW50YyAwIC8vIDEKCXJldHVybgoKLy8gZGVwb3NpdGZ1bmRzKGZ0cmFuc3ggOiBUeG4pOiB2b2lkCmRlcG9zaXRmdW5kczoKCXByb3RvIDEgMAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czozNQoJLy8gYXNzZXJ0KAoJLy8gICAgICAgICAgICAgdGhpcy50eG4uc2VuZGVyID09PSB0aGlzLmFwcC5jcmVhdG9yIHx8CgkvLyAgICAgICAgICAgICAgIHRoaXMudHhuLnNlbmRlciA9PT0gdGhpcy5wbGF5ZXIxLnZhbHVlIHx8CgkvLyAgICAgICAgICAgICAgIHRoaXMudHhuLnNlbmRlciA9PT0gdGhpcy5wbGF5ZXIyLnZhbHVlCgkvLyAgICAgICAgICAgKQoJdHhuIFNlbmRlcgoJdHhuYSBBcHBsaWNhdGlvbnMgMAoJYXBwX3BhcmFtc19nZXQgQXBwQ3JlYXRvcgoJcG9wCgk9PQoJZHVwCglibnogKnNraXBfb3IwCgl0eG4gU2VuZGVyCglieXRlYyAyIC8vICAicGxheWVyMSIKCWFwcF9nbG9iYWxfZ2V0Cgk9PQoJfHwKCipza2lwX29yMDoKCWR1cAoJYm56ICpza2lwX29yMQoJdHhuIFNlbmRlcgoJYnl0ZWMgMSAvLyAgInBsYXllcjIiCglhcHBfZ2xvYmFsX2dldAoJPT0KCXx8Cgoqc2tpcF9vcjE6Cglhc3NlcnQKCgkvLyBjb250cmFjdHMvR2FtZUNvbnRyYWN0LmFsZ28udHM6NDEKCS8vIHZlcmlmeVBheVR4bihmdHJhbnN4LCB7CgkvLyAgICAgICAgICAgICByZWNlaXZlcjogdGhpcy5hcHAuYWRkcmVzcywKCS8vCgkvLwoJLy8gICAgICAgICB9KQoJLy8gdmVyaWZ5IHBheQoJZnJhbWVfZGlnIC0xIC8vIGZ0cmFuc3g6IFR4bgoJZ3R4bnMgVHlwZUVudW0KCWludGMgMCAvLyAgcGF5Cgk9PQoKCS8vIHRyYW5zYWN0aW9uIHZlcmlmaWNhdGlvbiBmYWlsZWQ6IHsidHhuIjoiZnRyYW5zeCIsImZpZWxkIjoidHlwZUVudW0iLCJleHBlY3RlZCI6InBheSJ9Cglhc3NlcnQKCgkvLyB2ZXJpZnkgcmVjZWl2ZXIKCWZyYW1lX2RpZyAtMSAvLyBmdHJhbnN4OiBUeG4KCWd0eG5zIFJlY2VpdmVyCglnbG9iYWwgQ3VycmVudEFwcGxpY2F0aW9uQWRkcmVzcwoJPT0KCgkvLyB0cmFuc2FjdGlvbiB2ZXJpZmljYXRpb24gZmFpbGVkOiB7InR4biI6ImZ0cmFuc3giLCJmaWVsZCI6InJlY2VpdmVyIiwiZXhwZWN0ZWQiOiJ0aGlzLmFwcC5hZGRyZXNzIn0KCWFzc2VydAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czo0NgoJLy8gdGhpcy5kZXBvc2l0ZWRBbW91bnQudmFsdWUgKz0gZnRyYW5zeC5hc3NldEFtb3VudAoJYnl0ZWMgMCAvLyAgImRlcG9zaXRlZEFtb3VudCIKCWFwcF9nbG9iYWxfZ2V0CglmcmFtZV9kaWcgLTEgLy8gZnRyYW5zeDogVHhuCglndHhucyBBc3NldEFtb3VudAoJKwoJYnl0ZWMgMCAvLyAgImRlcG9zaXRlZEFtb3VudCIKCXN3YXAKCWFwcF9nbG9iYWxfcHV0CglyZXRzdWIKCi8vIHNlbmRGdW5kcyhhZGRyZXNzKXZvaWQKKmFiaV9yb3V0ZV9zZW5kRnVuZHM6CgkvLyBwbGF5ZXI6IGFkZHJlc3MKCXR4bmEgQXBwbGljYXRpb25BcmdzIDEKCWR1cAoJbGVuCglpbnRjIDEgLy8gMzIKCT09CgoJLy8gYXJndW1lbnQgMCAocGxheWVyKSBmb3Igc2VuZEZ1bmRzIG11c3QgYmUgYSBhZGRyZXNzCglhc3NlcnQKCgkvLyBleGVjdXRlIHNlbmRGdW5kcyhhZGRyZXNzKXZvaWQKCWNhbGxzdWIgc2VuZEZ1bmRzCglpbnRjIDAgLy8gMQoJcmV0dXJuCgovLyBzZW5kRnVuZHMocGxheWVyOiBBZGRyZXNzKTogdm9pZApzZW5kRnVuZHM6Cglwcm90byAxIDAKCgkvLyBjb250cmFjdHMvR2FtZUNvbnRyYWN0LmFsZ28udHM6NTQKCS8vIGFzc2VydCgKCS8vICAgICAgICAgICAgIHRoaXMudHhuLnNlbmRlciA9PT0gdGhpcy5hcHAuY3JlYXRvcgoJLy8gICAgICAgICAgICkKCXR4biBTZW5kZXIKCXR4bmEgQXBwbGljYXRpb25zIDAKCWFwcF9wYXJhbXNfZ2V0IEFwcENyZWF0b3IKCXBvcAoJPT0KCWFzc2VydAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czo1NwoJLy8gc2VuZFBheW1lbnQoewoJLy8gICAgICAgICAgICAgcmVjZWl2ZXI6IHBsYXllciwKCS8vICAgICAgICAgICAgIGFtb3VudDogdGhpcy5kZXBvc2l0ZWRBbW91bnQudmFsdWUsCgkvLyAgICAgICAgICAgfSkKCWl0eG5fYmVnaW4KCWludGMgMCAvLyAgcGF5CglpdHhuX2ZpZWxkIFR5cGVFbnVtCgoJLy8gY29udHJhY3RzL0dhbWVDb250cmFjdC5hbGdvLnRzOjU4CgkvLyByZWNlaXZlcjogcGxheWVyCglmcmFtZV9kaWcgLTEgLy8gcGxheWVyOiBBZGRyZXNzCglpdHhuX2ZpZWxkIFJlY2VpdmVyCgoJLy8gY29udHJhY3RzL0dhbWVDb250cmFjdC5hbGdvLnRzOjU5CgkvLyBhbW91bnQ6IHRoaXMuZGVwb3NpdGVkQW1vdW50LnZhbHVlCglieXRlYyAwIC8vICAiZGVwb3NpdGVkQW1vdW50IgoJYXBwX2dsb2JhbF9nZXQKCWl0eG5fZmllbGQgQW1vdW50CgoJLy8gRmVlIGZpZWxkIG5vdCBzZXQsIGRlZmF1bHRpbmcgdG8gMAoJaW50YyAyIC8vIDAKCWl0eG5fZmllbGQgRmVlCgoJLy8gU3VibWl0IGlubmVyIHRyYW5zYWN0aW9uCglpdHhuX3N1Ym1pdAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czo2MQoJLy8gdGhpcy5kZXBvc2l0ZWRBbW91bnQudmFsdWUgPSAwCglieXRlYyAwIC8vICAiZGVwb3NpdGVkQW1vdW50IgoJaW50YyAyIC8vIDAKCWFwcF9nbG9iYWxfcHV0CglyZXRzdWIKCi8vIGpvaW5HYW1lKGFkZHJlc3Mpdm9pZAoqYWJpX3JvdXRlX2pvaW5HYW1lOgoJLy8gcGxheWVyOiBhZGRyZXNzCgl0eG5hIEFwcGxpY2F0aW9uQXJncyAxCglkdXAKCWxlbgoJaW50YyAxIC8vIDMyCgk9PQoKCS8vIGFyZ3VtZW50IDAgKHBsYXllcikgZm9yIGpvaW5HYW1lIG11c3QgYmUgYSBhZGRyZXNzCglhc3NlcnQKCgkvLyBleGVjdXRlIGpvaW5HYW1lKGFkZHJlc3Mpdm9pZAoJY2FsbHN1YiBqb2luR2FtZQoJaW50YyAwIC8vIDEKCXJldHVybgoKLy8gam9pbkdhbWUocGxheWVyOiBBZGRyZXNzKTogdm9pZApqb2luR2FtZToKCXByb3RvIDEgMAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czo2OQoJLy8gYXNzZXJ0KAoJLy8gICAgICAgICAgICAgIXRoaXMucGxheWVyMi5leGlzdHMKCS8vICAgICAgICAgICApCgl0eG5hIEFwcGxpY2F0aW9ucyAwCglieXRlYyAxIC8vICAicGxheWVyMiIKCWFwcF9nbG9iYWxfZ2V0X2V4Cglzd2FwCglwb3AKCSEKCWFzc2VydAoKCS8vIGNvbnRyYWN0cy9HYW1lQ29udHJhY3QuYWxnby50czo3MwoJLy8gdGhpcy5wbGF5ZXIyLnZhbHVlID1wbGF5ZXIKCWJ5dGVjIDEgLy8gICJwbGF5ZXIyIgoJZnJhbWVfZGlnIC0xIC8vIHBsYXllcjogQWRkcmVzcwoJYXBwX2dsb2JhbF9wdXQKCXJldHN1YgoKKmNyZWF0ZV9Ob09wOgoJcHVzaGJ5dGVzIDB4YjRjNzdkNzEgLy8gbWV0aG9kICJjcmVhdGVBcHBsaWNhdGlvbihhZGRyZXNzLGFkZHJlc3Mpdm9pZCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoICphYmlfcm91dGVfY3JlYXRlQXBwbGljYXRpb24KCgkvLyB0aGlzIGNvbnRyYWN0IGRvZXMgbm90IGltcGxlbWVudCB0aGUgZ2l2ZW4gQUJJIG1ldGhvZCBmb3IgY3JlYXRlIE5vT3AKCWVycgoKKmNhbGxfTm9PcDoKCXB1c2hieXRlcyAweGVhMDQ1MDM2IC8vIG1ldGhvZCAiY3JlYXRlQm94KCl2b2lkIgoJcHVzaGJ5dGVzIDB4NDg2NzU0NzAgLy8gbWV0aG9kICJkZXBvc2l0ZnVuZHModHhuKXZvaWQiCglwdXNoYnl0ZXMgMHgzYTE5ZDBkZSAvLyBtZXRob2QgInNlbmRGdW5kcyhhZGRyZXNzKXZvaWQiCglwdXNoYnl0ZXMgMHgzN2ZlOWRjYyAvLyBtZXRob2QgImpvaW5HYW1lKGFkZHJlc3Mpdm9pZCIKCXR4bmEgQXBwbGljYXRpb25BcmdzIDAKCW1hdGNoICphYmlfcm91dGVfY3JlYXRlQm94ICphYmlfcm91dGVfZGVwb3NpdGZ1bmRzICphYmlfcm91dGVfc2VuZEZ1bmRzICphYmlfcm91dGVfam9pbkdhbWUKCgkvLyB0aGlzIGNvbnRyYWN0IGRvZXMgbm90IGltcGxlbWVudCB0aGUgZ2l2ZW4gQUJJIG1ldGhvZCBmb3IgY2FsbCBOb09wCgllcnI=","clear":"I3ByYWdtYSB2ZXJzaW9uIDEw"},"byteCode":{"approval":"CiAEASAAkAMmAw9kZXBvc2l0ZWRBbW91bnQHcGxheWVyMgdwbGF5ZXIxMRgUgQYLMRkIjQwBAQAAAAAAAAAAAAAA8wAAAAAAAAAAAAAANhoCSRUjEkQ2GgFJFSMSRIgAAiJDigIAKov/ZymL/mcoJGeAEG1heERlcG9zaXRBbW91bnSBBWeJiAACIkOKAACAC3BsYXllcjFNb3ZlJblIgAtwbGF5ZXIyTW92ZSW5SIkxFiIJiAACIkOKAQAxADYyAHIHSBJJQAAGMQAqZBIRSUAABjEAKWQSEUSL/zgQIhJEi/84BzIKEkQoZIv/OBIIKExniTYaAUkVIxJEiAACIkOKAQAxADYyAHIHSBJEsSKyEIv/sgcoZLIIJLIBsygkZ4k2GgFJFSMSRIgAAiJDigEANjIAKWVMSBREKYv/Z4mABLTHfXE2GgCOAf8BAIAE6gRQNoAESGdUcIAEOhnQ3oAEN/6dzDYaAI4E/xT/Pf+B/68A","clear":"Cg=="},"compilerInfo":{"compiler":"algod","compilerVersion":{"major":4,"minor":0,"patch":2,"commitHash":"6b940281"}}} as unknown as Arc56Contract
 
 /**
  * A state record containing binary data
@@ -75,10 +75,14 @@ export type FightArgs = {
       player1: string
       player2: string
     }
+    'createBox()void': Record<string, never>
     'depositfunds(txn)void': {
       ftransx: AppMethodCallTransactionArgument
     }
     'sendFunds(address)void': {
+      player: string
+    }
+    'joinGame(address)void': {
       player: string
     }
   }
@@ -87,8 +91,10 @@ export type FightArgs = {
    */
   tuple: {
     'createApplication(address,address)void': [player1: string, player2: string]
+    'createBox()void': []
     'depositfunds(txn)void': [ftransx: AppMethodCallTransactionArgument]
     'sendFunds(address)void': [player: string]
+    'joinGame(address)void': [player: string]
   }
 }
 
@@ -97,8 +103,10 @@ export type FightArgs = {
  */
 export type FightReturns = {
   'createApplication(address,address)void': void
+  'createBox()void': void
   'depositfunds(txn)void': void
   'sendFunds(address)void': void
+  'joinGame(address)void': void
 }
 
 /**
@@ -114,6 +122,11 @@ export type FightTypes = {
       argsTuple: FightArgs['tuple']['createApplication(address,address)void']
       returns: FightReturns['createApplication(address,address)void']
     }>
+    & Record<'createBox()void' | 'createBox', {
+      argsObj: FightArgs['obj']['createBox()void']
+      argsTuple: FightArgs['tuple']['createBox()void']
+      returns: FightReturns['createBox()void']
+    }>
     & Record<'depositfunds(txn)void' | 'depositfunds', {
       argsObj: FightArgs['obj']['depositfunds(txn)void']
       argsTuple: FightArgs['tuple']['depositfunds(txn)void']
@@ -123,6 +136,11 @@ export type FightTypes = {
       argsObj: FightArgs['obj']['sendFunds(address)void']
       argsTuple: FightArgs['tuple']['sendFunds(address)void']
       returns: FightReturns['sendFunds(address)void']
+    }>
+    & Record<'joinGame(address)void' | 'joinGame', {
+      argsObj: FightArgs['obj']['joinGame(address)void']
+      argsTuple: FightArgs['tuple']['joinGame(address)void']
+      returns: FightReturns['joinGame(address)void']
     }>
   /**
    * Defines the shape of the state of the application.
@@ -135,6 +153,14 @@ export type FightTypes = {
         depositedAmount: bigint
         maxDepositAmount: bigint
         winner: string
+        status: string
+      }
+      maps: {}
+    }
+    box: {
+      keys: {
+        player1Move: string
+        player2Move: string
       }
       maps: {}
     }
@@ -172,6 +198,11 @@ export type MethodReturn<TSignature extends FightSignatures> = FightTypes['metho
  * Defines the shape of the keyed global state of the application.
  */
 export type GlobalKeysState = FightTypes['state']['global']['keys']
+
+/**
+ * Defines the shape of the keyed box state of the application.
+ */
+export type BoxKeysState = FightTypes['state']['box']['keys']
 
 
 /**
@@ -226,6 +257,19 @@ export abstract class FightParamsFactory {
   }
 
   /**
+   * Constructs a no op call for the createBox()void ABI method
+   *
+   * @param params Parameters for the call
+   * @returns An `AppClientMethodCallParams` object for the call
+   */
+  static createBox(params: CallParams<FightArgs['obj']['createBox()void'] | FightArgs['tuple']['createBox()void']> & CallOnComplete): AppClientMethodCallParams & CallOnComplete {
+    return {
+      ...params,
+      method: 'createBox()void' as const,
+      args: Array.isArray(params.args) ? params.args : [],
+    }
+  }
+  /**
    * Constructs a no op call for the depositfunds(txn)void ABI method
    *
    * @param params Parameters for the call
@@ -248,6 +292,19 @@ export abstract class FightParamsFactory {
     return {
       ...params,
       method: 'sendFunds(address)void' as const,
+      args: Array.isArray(params.args) ? params.args : [params.args.player],
+    }
+  }
+  /**
+   * Constructs a no op call for the joinGame(address)void ABI method
+   *
+   * @param params Parameters for the call
+   * @returns An `AppClientMethodCallParams` object for the call
+   */
+  static joinGame(params: CallParams<FightArgs['obj']['joinGame(address)void'] | FightArgs['tuple']['joinGame(address)void']> & CallOnComplete): AppClientMethodCallParams & CallOnComplete {
+    return {
+      ...params,
+      method: 'joinGame(address)void' as const,
       args: Array.isArray(params.args) ? params.args : [params.args.player],
     }
   }
@@ -493,6 +550,16 @@ export class FightClient {
     },
 
     /**
+     * Makes a call to the Fight smart contract using the `createBox()void` ABI method.
+     *
+     * @param params The params for the smart contract call
+     * @returns The call params
+     */
+    createBox: (params: CallParams<FightArgs['obj']['createBox()void'] | FightArgs['tuple']['createBox()void']> & {onComplete?: OnApplicationComplete.NoOpOC} = {args: []}) => {
+      return this.appClient.params.call(FightParamsFactory.createBox(params))
+    },
+
+    /**
      * Makes a call to the Fight smart contract using the `depositfunds(txn)void` ABI method.
      *
      * @param params The params for the smart contract call
@@ -512,6 +579,16 @@ export class FightClient {
       return this.appClient.params.call(FightParamsFactory.sendFunds(params))
     },
 
+    /**
+     * Makes a call to the Fight smart contract using the `joinGame(address)void` ABI method.
+     *
+     * @param params The params for the smart contract call
+     * @returns The call params
+     */
+    joinGame: (params: CallParams<FightArgs['obj']['joinGame(address)void'] | FightArgs['tuple']['joinGame(address)void']> & {onComplete?: OnApplicationComplete.NoOpOC}) => {
+      return this.appClient.params.call(FightParamsFactory.joinGame(params))
+    },
+
   }
 
   /**
@@ -526,6 +603,16 @@ export class FightClient {
      */
     clearState: (params?: Expand<AppClientBareCallParams>) => {
       return this.appClient.createTransaction.bare.clearState(params)
+    },
+
+    /**
+     * Makes a call to the Fight smart contract using the `createBox()void` ABI method.
+     *
+     * @param params The params for the smart contract call
+     * @returns The call transaction
+     */
+    createBox: (params: CallParams<FightArgs['obj']['createBox()void'] | FightArgs['tuple']['createBox()void']> & {onComplete?: OnApplicationComplete.NoOpOC} = {args: []}) => {
+      return this.appClient.createTransaction.call(FightParamsFactory.createBox(params))
     },
 
     /**
@@ -548,6 +635,16 @@ export class FightClient {
       return this.appClient.createTransaction.call(FightParamsFactory.sendFunds(params))
     },
 
+    /**
+     * Makes a call to the Fight smart contract using the `joinGame(address)void` ABI method.
+     *
+     * @param params The params for the smart contract call
+     * @returns The call transaction
+     */
+    joinGame: (params: CallParams<FightArgs['obj']['joinGame(address)void'] | FightArgs['tuple']['joinGame(address)void']> & {onComplete?: OnApplicationComplete.NoOpOC}) => {
+      return this.appClient.createTransaction.call(FightParamsFactory.joinGame(params))
+    },
+
   }
 
   /**
@@ -562,6 +659,17 @@ export class FightClient {
      */
     clearState: (params?: Expand<AppClientBareCallParams & SendParams>) => {
       return this.appClient.send.bare.clearState(params)
+    },
+
+    /**
+     * Makes a call to the Fight smart contract using the `createBox()void` ABI method.
+     *
+     * @param params The params for the smart contract call
+     * @returns The call result
+     */
+    createBox: async (params: CallParams<FightArgs['obj']['createBox()void'] | FightArgs['tuple']['createBox()void']> & SendParams & {onComplete?: OnApplicationComplete.NoOpOC} = {args: []}) => {
+      const result = await this.appClient.send.call(FightParamsFactory.createBox(params))
+      return {...result, return: result.return as unknown as (undefined | FightReturns['createBox()void'])}
     },
 
     /**
@@ -584,6 +692,17 @@ export class FightClient {
     sendFunds: async (params: CallParams<FightArgs['obj']['sendFunds(address)void'] | FightArgs['tuple']['sendFunds(address)void']> & SendParams & {onComplete?: OnApplicationComplete.NoOpOC}) => {
       const result = await this.appClient.send.call(FightParamsFactory.sendFunds(params))
       return {...result, return: result.return as unknown as (undefined | FightReturns['sendFunds(address)void'])}
+    },
+
+    /**
+     * Makes a call to the Fight smart contract using the `joinGame(address)void` ABI method.
+     *
+     * @param params The params for the smart contract call
+     * @returns The call result
+     */
+    joinGame: async (params: CallParams<FightArgs['obj']['joinGame(address)void'] | FightArgs['tuple']['joinGame(address)void']> & SendParams & {onComplete?: OnApplicationComplete.NoOpOC}) => {
+      const result = await this.appClient.send.call(FightParamsFactory.joinGame(params))
+      return {...result, return: result.return as unknown as (undefined | FightReturns['joinGame(address)void'])}
     },
 
   }
@@ -617,6 +736,7 @@ export class FightClient {
           depositedAmount: result.depositedAmount,
           maxDepositAmount: result.maxDepositAmount,
           winner: result.winner,
+          status: result.status,
         }
       },
       /**
@@ -639,6 +759,33 @@ export class FightClient {
        * Get the current value of the winner key in global state
        */
       winner: async (): Promise<string | undefined> => { return (await this.appClient.state.global.getValue("winner")) as string | undefined },
+      /**
+       * Get the current value of the status key in global state
+       */
+      status: async (): Promise<string | undefined> => { return (await this.appClient.state.global.getValue("status")) as string | undefined },
+    },
+    /**
+     * Methods to access box state for the current Fight app
+     */
+    box: {
+      /**
+       * Get all current keyed values from box state
+       */
+      getAll: async (): Promise<Partial<Expand<BoxKeysState>>> => {
+        const result = await this.appClient.state.box.getAll()
+        return {
+          player1Move: result.player1Move,
+          player2Move: result.player2Move,
+        }
+      },
+      /**
+       * Get the current value of the player1Move key in box state
+       */
+      player1Move: async (): Promise<string | undefined> => { return (await this.appClient.state.box.getValue("player1Move")) as string | undefined },
+      /**
+       * Get the current value of the player2Move key in box state
+       */
+      player2Move: async (): Promise<string | undefined> => { return (await this.appClient.state.box.getValue("player2Move")) as string | undefined },
     },
   }
 
@@ -648,6 +795,14 @@ export class FightClient {
     let promiseChain:Promise<unknown> = Promise.resolve()
     const resultMappers: Array<undefined | ((x: ABIReturn | undefined) => any)> = []
     return {
+      /**
+       * Add a createBox()void method call against the Fight contract
+       */
+      createBox(params: CallParams<FightArgs['obj']['createBox()void'] | FightArgs['tuple']['createBox()void']> & {onComplete?: OnApplicationComplete.NoOpOC}) {
+        promiseChain = promiseChain.then(async () => composer.addAppCallMethodCall(await client.params.createBox(params)))
+        resultMappers.push(undefined)
+        return this
+      },
       /**
        * Add a depositfunds(txn)void method call against the Fight contract
        */
@@ -661,6 +816,14 @@ export class FightClient {
        */
       sendFunds(params: CallParams<FightArgs['obj']['sendFunds(address)void'] | FightArgs['tuple']['sendFunds(address)void']> & {onComplete?: OnApplicationComplete.NoOpOC}) {
         promiseChain = promiseChain.then(async () => composer.addAppCallMethodCall(await client.params.sendFunds(params)))
+        resultMappers.push(undefined)
+        return this
+      },
+      /**
+       * Add a joinGame(address)void method call against the Fight contract
+       */
+      joinGame(params: CallParams<FightArgs['obj']['joinGame(address)void'] | FightArgs['tuple']['joinGame(address)void']> & {onComplete?: OnApplicationComplete.NoOpOC}) {
+        promiseChain = promiseChain.then(async () => composer.addAppCallMethodCall(await client.params.joinGame(params)))
         resultMappers.push(undefined)
         return this
       },
@@ -700,6 +863,15 @@ export class FightClient {
 }
 export type FightComposer<TReturns extends [...any[]] = []> = {
   /**
+   * Calls the createBox()void ABI method.
+   *
+   * @param args The arguments for the contract call
+   * @param params Any additional parameters for the call
+   * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
+   */
+  createBox(params?: CallParams<FightArgs['obj']['createBox()void'] | FightArgs['tuple']['createBox()void']>): FightComposer<[...TReturns, FightReturns['createBox()void'] | undefined]>
+
+  /**
    * Calls the depositfunds(txn)void ABI method.
    *
    * @param args The arguments for the contract call
@@ -716,6 +888,15 @@ export type FightComposer<TReturns extends [...any[]] = []> = {
    * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
    */
   sendFunds(params?: CallParams<FightArgs['obj']['sendFunds(address)void'] | FightArgs['tuple']['sendFunds(address)void']>): FightComposer<[...TReturns, FightReturns['sendFunds(address)void'] | undefined]>
+
+  /**
+   * Calls the joinGame(address)void ABI method.
+   *
+   * @param args The arguments for the contract call
+   * @param params Any additional parameters for the call
+   * @returns The typed transaction composer so you can fluently chain multiple calls or call execute to execute all queued up transactions
+   */
+  joinGame(params?: CallParams<FightArgs['obj']['joinGame(address)void'] | FightArgs['tuple']['joinGame(address)void']>): FightComposer<[...TReturns, FightReturns['joinGame(address)void'] | undefined]>
 
   /**
    * Makes a clear_state call to an existing instance of the Fight smart contract.
